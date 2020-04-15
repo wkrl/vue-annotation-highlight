@@ -17,6 +17,7 @@
 <script>
 import { annotationValidator } from './Utils'
 export default {
+  name: 'annotation-highlight',
 	props: {
 		text: {
 			type: String,

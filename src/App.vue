@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <AnnotationHighlight
+    <annotation-highlight
       :text="text"
       :annotations="annotations"
     />
@@ -9,7 +9,6 @@
 
 <script>
 import AnnotationHighlight from './components/AnnotationHighlight'
-
 export default {
   data() {
     return {
