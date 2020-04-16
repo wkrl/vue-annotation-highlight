@@ -32,18 +32,16 @@ describe('AnnotationHighlight.vue', () => {
   })
 
   it('wraps html mark tag around annotation text by default', () => {
-    const firstAnnotationText = text.slice(annotations[0].begin, annotations[0].begin + annotations[0].length)
-    const secondAnnotationText = text.slice(annotations[1].begin, annotations[1].begin + annotations[1].length)
+    const annotationText = text.slice(annotations[0].begin, annotations[0].begin + annotations[0].length)
 
     const wrapper = shallowMount(AnnotationHighlight, {
       propsData: { 
         text, 
-        annotations
+        annotations: annotations[0]
       }
     })    
 
-    expect(wrapper.findAll('mark').at(0).text()).toBe(firstAnnotationText)
-    expect(wrapper.findAll('mark').at(1).text()).toBe(secondAnnotationText)
+    expect(wrapper.find('mark').text()).toBe(annotationText)    
   })  
 
   it('renders props.highlightComponent', () => {
@@ -79,7 +77,6 @@ describe('AnnotationHighlight.vue', () => {
         highlightComponent: MyHighlightComponent
       }
     })    
-    
     expect(wrapper.find(MyHighlightComponent).attributes().style).toEqual('background-color: red;')
   })
 })
