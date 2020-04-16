@@ -20,7 +20,7 @@ import { chunkify } from '../utils/TextToChunks'
 
 export default {
   name: 'annotation-highlight',
-  
+
 	props: {
 		text: {
 			type: String,
@@ -46,7 +46,7 @@ export default {
 
 	computed: {
     getTextAsChunks() {
-      return chunkify(this.$props.text, this.$props.annotations)
+			return chunkify(this.$props.text, this.$props.annotations)
     }
   }
 }
