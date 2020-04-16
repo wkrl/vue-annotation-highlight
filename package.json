@@ -1,13 +1,21 @@
 {
   "name": "vue-annotation-highlight",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name AnnotationHighlight ./src/index.js",
     "test:unit": "vue-cli-service test:unit '--coverage'",
     "lint": "vue-cli-service lint"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js"
+  ],
+  "main": "./dist/AnnotationHighlight.common.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"
