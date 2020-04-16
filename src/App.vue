@@ -16,11 +16,11 @@ export default {
       annotations: [
         {begin: 3, length: 10, source:'PRED', confidence:'0.9'},
         {begin: 53, length: 16, source:'PRED', confidence:'0.7'}
-      ]              
+      ]
     }
   },
   components: {
-    AnnotationHighlight,    
+    AnnotationHighlight,
   }
 }
 </script>

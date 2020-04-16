@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { annotationValidator } from './Utils'
+import { annotationValidator } from '../utils/AnnotationValidator'
 export default {
   name: 'annotation-highlight',
 	props: {
