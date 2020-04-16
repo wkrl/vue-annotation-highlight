@@ -61,5 +61,24 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "``` npm install ```",
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkrl/vue-annotation-highlight.git"
+  },
+  "keywords": [
+    "vue",
+    "annotation",
+    "highlight"
+  ],
+  "author": "Karl Brendel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wkrl/vue-annotation-highlight/issues"
+  },
+  "homepage": "https://github.com/wkrl/vue-annotation-highlight#readme"
 }
