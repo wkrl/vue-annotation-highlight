@@ -12,7 +12,7 @@ const annotationsAsArrayValidator = annotations => {
 }
 
 const annotationAsObjectValidator = annotation => {
-    if (!annotation.begin | !annotation.length) return false
+    if (!Number.isInteger(annotation.begin) | !Number.isInteger(annotation.length)) return false
     return true
 }
 
