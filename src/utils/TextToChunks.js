@@ -1,7 +1,8 @@
-let chunks = []
-let unhighlightText = ''
+let chunks, unhighlightText
 
 const chunkify = (text, annotations) => {
+    chunks = []
+    unhighlightText = ''
     for (let offset = 0; offset < text.length; offset++) {
         let annotation = getAnnotationByOffset(annotations, offset)
         if (annotation) {
