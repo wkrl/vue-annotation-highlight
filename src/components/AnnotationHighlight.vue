@@ -17,8 +17,10 @@
 <script>
 import { annotationValidator } from '../utils/AnnotationValidator'
 import { chunkify } from '../utils/TextToChunks'
+
 export default {
   name: 'annotation-highlight',
+  
 	props: {
 		text: {
 			type: String,

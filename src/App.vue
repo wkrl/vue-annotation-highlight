@@ -9,6 +9,7 @@
 
 <script>
 import AnnotationHighlight from './components/AnnotationHighlight'
+
 export default {
   data() {
     return {
@@ -19,6 +20,7 @@ export default {
       ]
     }
   },
+
   components: {
     AnnotationHighlight,
   }
