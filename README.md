@@ -2,7 +2,7 @@
 A Vue.js library to highlight annotations.
 
 <p align="center">
-  <img src="./src/assets/css/annotation_capture.gif">
+  <img src="./src/assets/annotation_capture.gif">
 </p>
 
 ## Install
