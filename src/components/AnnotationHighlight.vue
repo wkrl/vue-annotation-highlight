@@ -1,19 +1,3 @@
-<template>
-	<div>
-		<span v-for="(chunk, index) in getTextAsChunks" :key="index">
-      <component
-        v-if="chunk.isHighlight"
-        :is="highlightComponent"
-        :annotation="chunk.annotation"
-        :style="highlightStyle"
-      >{{chunk.text}}</component>
-      <span
-        v-else
-      >{{chunk.text}}</span>
-    </span>
-	</div>
-</template>
-
 <script>
 import { annotationValidator } from '../utils/AnnotationValidator'
 import { chunkify } from '../utils/TextToChunks'
@@ -45,9 +29,18 @@ export default {
   },
 
 	computed: {
-    getTextAsChunks() {
+    textAsChunks() {
 			return chunkify(this.$props.text, this.$props.annotations)
     }
+	},
+	
+	render() {
+    return <span>{this.textAsChunks.map(chunk => {
+			return chunk.isHighlight ? 
+				<this.highlightComponent style={this.highlightStyle} annotation={chunk.annotation}>{chunk.text}</this.highlightComponent> 
+					: 
+				<span>{chunk.text}</span>
+		})}</span>
   }
 }
 </script>
