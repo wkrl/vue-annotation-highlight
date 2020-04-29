@@ -47,7 +47,7 @@ data() {
 | Prop  | Expected type | Required | 
 | ------------- | ------------- | ------------- |
 | `text`  | String  | ☑️ |
-| `annotations` | [Object, Array] | ☑️ | 
+| `annotations` | [Object, Array] |  
 | `highlightStyle`  | [String, Object]  | 
 | `highlightComponent`  | Object  | 
 
