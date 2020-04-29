@@ -1,4 +1,4 @@
-const annotationValidator = obj => {
+const annotationValidator = obj => {    
     if (Array.isArray(obj)) {
         return annotationsAsArrayValidator(obj)
     } 

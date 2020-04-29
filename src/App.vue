@@ -39,9 +39,11 @@ export default {
         border: '1px solid lightblue',        
         borderRadius: '4px'
       },
+
       MyHighlightComponent: MyHighlightComponent,
       
       isStyleSelected: false,   
+      
       isComponentSelected: false
     }
   },
