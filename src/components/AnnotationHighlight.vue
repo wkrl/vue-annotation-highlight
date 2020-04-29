@@ -13,7 +13,6 @@ export default {
 
 		annotations: {
 			type: [Array, Object],
-			required: true,
 			validator: obj => annotationValidator(obj)
 		},
 
