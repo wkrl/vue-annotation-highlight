@@ -1,5 +1,6 @@
 const annotationValidator = obj => {    
     if (Array.isArray(obj)) {
+        if (obj.length === 0) return true
         return annotationsAsArrayValidator(obj)
     } 
     return annotationAsObjectValidator(obj)     
